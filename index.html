@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="pick-city">
+        <input
+          type="text"
+          placeholder="Enter a city"
+          class="search-box"
+          id="search-city"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+      <hr />
+      <div class="current-weather">
+        <div>
+          <h1>Helsingborg</h1>
+          <p>
+            <span id="day-time-changes">Tuesday 16:00</span>
+            <br />
+            <strong>14°C</strong> - 20°C
+            <br />
+            Clear sky in the morning and partley cloudy this afternoon.
+            <br />
+            Gentle breeze from south west <strong>(4m/s)</strong>
+          </p>
+        </div>
+        <div class="weather-temperature">
+          <span class="emoji">☀️</span><span id="current-degree">14</span
+          ><span class="degree">&degC</span>
+        </div>
+      </div>
+      <!--
+      <ul>
+        <li>
+          Tuesday 🌤️
+          <br />
+          <strong>14°C</strong> - 20°C
+        </li>
+        <li>
+          Wednesday 🌤️
+          <br />
+          <strong>14°C</strong> - 20°C
+        </li>
+        <li>
+          Thursday 🌤️
+          <br />
+          <strong>14°C</strong> - 20°C
+        </li>
+        <li>
+          Friday 🌤️
+          <br />
+          <strong>14°C</strong> - 20°C
+        </li>
+        <li>
+          Saturday 🌤️
+          <br />
+          <strong>14°C</strong> - 20°C
+        </li>
+        <li>
+          Sunday 🌤️
+          <br />
+          <strong>14°C</strong> - 20°C
+        </li>
+      </ul>
+      -->
+      <hr />
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Daniela Mure</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
